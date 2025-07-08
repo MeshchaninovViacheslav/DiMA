@@ -1,0 +1,55 @@
+defaults:
+  - model: bert_base
+  - encoder: esm2
+  - decoder: transformer
+  - datasets: afdb
+  - dataloader: default
+  - scheduler: tanh
+  - dynamic: sde
+  - solver: euler
+  - optimizer: adamw
+  - lr_scheduler: cosine
+  - metrics: default
+  - structure_generation: default
+  
+
+ddp:
+  enabled: true
+  local_rank: 0
+  global_rank: 0
+
+
+project:
+  seed: 42
+  path: "/home/jovyan/meshchaninov/DiMAv2.0"
+  wandb_project: "test" #"DiMAv2.0-scaling"
+  checkpoints_prefix: "test" #"DiMAv2.0-35M-CHEAP_shorten_1_dim_1024-AFDB-v2_64_510-1024-320"
+  checkpoints_folder: "${project.path}/checkpoints"
+  diffusion_checkpoints_folder: "${project.checkpoints_folder}/diffusion_checkpoints"
+  decoder_checkpoints_folder: "${project.checkpoints_folder}/decoder_checkpoints"
+  statistics_folder: "${project.checkpoints_folder}/statistics"
+
+
+s3:
+  bucket: "dima-protein-diffusion" # TODO: Update with your S3 bucket name
+  region: "eu-north-1"          # TODO: Update with your S3 bucket region if not us-east-1
+
+
+training:
+  training_iters: 1000000
+  eval_interval: 50000
+  save_interval: 50000
+  batch_size: 256
+  batch_size_per_gpu: 32
+  ema_rate: 0.9999
+  grad_clip_norm: 1.0
+  init_se: ""
+
+
+generation:
+  t_min: 0.05
+  N_steps: 2000
+  batch_size: 256
+  num_gen_samples: 2048
+  save_dir: "${project.path}/generated_sequences"
+

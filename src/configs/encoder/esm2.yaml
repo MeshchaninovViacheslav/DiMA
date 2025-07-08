@@ -1,0 +1,23 @@
+_target_: src.encoders.ESM2EncoderModel
+_partial_: true
+
+config:
+  encoder_type: "ESM2-3B" # name for logging
+  encoder_model_name: "facebook/esm2_t36_3B_UR50D" # name for huggingface model or etc.
+  statistics_path: "${project.statistics_folder}/encodings-${encoder.config.encoder_type}.pth"
+  
+  embedding_dim: 2560
+  
+# "ESM2-8M": 320,
+# "ESM2-35M": 480,
+# "ESM2-150M": 640,
+# "ESM2-650M": 1280,
+# "ESM2-3B": 2560,
+
+# types = {
+#     "ESM2-8M": "facebook/esm2_t6_8M_UR50D",
+#     "ESM2-35M": "facebook/esm2_t12_35M_UR50D",
+#     "ESM2-150M": "facebook/esm2_t30_150M_UR50D",
+#     "ESM2-650M": "facebook/esm2_t33_650M_UR50D",
+#     "ESM2-3B": "facebook/esm2_t36_3B_UR50D",
+# }

@@ -1,0 +1,17 @@
+decoder_type: "transformer"
+
+optimizer:
+  _target_: torch.optim.AdamW
+  lr: 1e-4
+  weight_decay: 0.001
+  betas: [0.9, 0.98]
+
+training_epochs: 1
+max_T: 0.25
+min_T: 0.001
+
+num_hidden_layers: 3
+
+decoder_path: "${project.decoder_checkpoints_folder}/transformer-decoder-${encoder.config.encoder_type}.pth"
+
+

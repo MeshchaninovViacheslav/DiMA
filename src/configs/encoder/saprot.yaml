@@ -1,0 +1,9 @@
+_target_: src.encoders.SaprotEncoderModel
+_partial_: true
+
+config:
+  encoder_type: "SaProt-35M" # name for logging
+  encoder_model_name: "westlake-repl/SaProt_35M_AF2" # name for huggingface model or etc.
+  statistics_path: "${project.statistics_folder}/encodings-${encoder.config.encoder_type}.pth"
+  
+  embedding_dim: 480

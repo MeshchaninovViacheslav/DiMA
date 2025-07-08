@@ -1,0 +1,13 @@
+decoder_type: "lm_head"
+
+optimizer:
+  _target_: torch.optim.AdamW
+  lr: 1e-4
+  weight_decay: 0.001
+  betas: [0.9, 0.98]
+
+training_epochs: 1
+max_T: 0.25
+min_T: 0.001
+
+decoder_path: "${project.decoder_checkpoints_folder}/lm_head-decoder-${encoder.config.encoder_type}.pth"

@@ -1,0 +1,12 @@
+fid:
+  num_samples: 2048
+
+mmd:
+  num_samples: 2048
+
+esm_pppl:
+  num_samples: 512
+
+plddt:
+  num_samples: 512
+  pdb_path: "${project.path}/pdb_files/${project.checkpoints_prefix}"

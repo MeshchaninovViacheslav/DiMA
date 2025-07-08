@@ -1,0 +1,9 @@
+_target_: src.encoders.CHEAPEncoderModel
+_partial_: true
+
+config:
+  encoder_type: "CHEAP_shorten_1_dim_1024"
+  encoder_model_name: "CHEAP_shorten_1_dim_1024"
+  statistics_path: "${project.statistics_folder}/encodings-${encoder.config.encoder_type}.pth"
+  embedding_dim: 1024
+  

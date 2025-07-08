@@ -1,0 +1,9 @@
+_target_: timm.scheduler.cosine_lr.CosineLRScheduler
+
+t_initial: ${training.training_iters}
+lr_min: 2e-4
+warmup_lr_init: 1e-6
+warmup_t: 1000
+cycle_limit: 1
+t_in_epochs: False
+

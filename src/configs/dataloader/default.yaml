@@ -1,0 +1,5 @@
+_target_: torch.utils.data.DataLoader
+
+batch_size: ${training.batch_size_per_gpu}
+num_workers: 30
+drop_last: true

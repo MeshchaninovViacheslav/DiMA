@@ -1,0 +1,4 @@
+expetiment_dir: "${project.path}/exps/structure_generation"
+num_samples: 10
+batch_size: 2
+artifacts_dir: "${structure_generation.expetiment_dir}/generated_artifacts"

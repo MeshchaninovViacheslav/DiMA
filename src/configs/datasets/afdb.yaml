@@ -1,0 +1,5 @@
+data_name: "AFDB-v2"
+data_dir: "${project.path}/data/${datasets.data_name}"
+length_distribution: "${project.path}/data/distributions/${datasets.data_name}.npy"
+
+max_sequence_len: 254

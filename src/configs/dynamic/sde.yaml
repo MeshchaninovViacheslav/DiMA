@@ -1,0 +1,2 @@
+_target_: src.diffusion.dynamic.DynamicSDE
+T: 1.0

@@ -1,0 +1,9 @@
+_target_: src.encoders.ESMCEncoderModel
+_partial_: true
+
+config:
+  encoder_type: "esmc_300m" # name for logging
+  encoder_model_name: "esmc_300m" # name for huggingface model or etc.
+  statistics_path: "${project.statistics_folder}/encodings-${encoder.config.encoder_type}.pth"
+  
+  embedding_dim: 960
