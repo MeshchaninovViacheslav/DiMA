@@ -4,27 +4,27 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="description" content="Diffusion on Language Model Encodings for Protein Sequence Generation">
+  <meta property="og:title" content="Diffusion on Language Model Encodings for Protein Sequence Generation"/>
+  <meta property="og:description" content="DiMA is a deep learning framework that generates novel and diverse protein sequences. It uses continuous denoising diffusion in latent spaces of protein language models. DiMA uses significantly fewer computational resources than comparable systems while achieving superior performance across various tasks."/>
+  <meta property="og:url" content="https://meshchaninovviacheslav.github.io/DiMA/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image" content="static/images/DIMA_ICML2025_main_figure-min.png" />
   <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:height" content="489"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="Diffusion on Language Model Encodings for Protein Sequence Generation">
+  <meta name="twitter:description" content="DiMA is a deep learning framework that generates novel and diverse protein sequences. It uses continuous denoising diffusion in latent spaces of protein language models. DiMA uses significantly fewer computational resources than comparable systems while achieving superior performance across various tasks.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:image" content="static/images/DIMA_ICML2025_main_figure-min.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="DiMA, protein generation, protein design, gaussian diffusion, protein language model">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Diffusion on Language Model Encodings for Protein Sequence Generation</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.jpg">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -63,13 +63,13 @@
                 <a href="Andrey Shevtsov" target="_blank">Andrey Shevtsov</a><sup>* 2</sup>,</span>
                 <br>
               <span class="author-block">
-                <a href="Fedor Nikolaev" target="_blank">Fedor Nikolaev</a><sup>* 2</sup>,</span>
+                <a href="Fedor Nikolaev" target="_blank">Fedor Nikolaev</a><sup>2</sup>,</span>
               <span class="author-block">
-                <a href="Nikita Ivanisenko" target="_blank">Nikita Ivanisenko</a><sup>* 2</sup>,</span>
+                <a href="Nikita Ivanisenko" target="_blank">Nikita Ivanisenko</a><sup>2</sup>,</span>
               <span class="author-block">
-                <a href="Olga Kardymon" target="_blank">Olga Kardymon</a><sup>* 2</sup>,</span>
+                <a href="Olga Kardymon" target="_blank">Olga Kardymon</a><sup>2</sup>,</span>
               <span class="author-block">
-                <a href="Dmitry Vetrov" target="_blank">Dmitry Vetrov</a><sup>* 1</sup></span>
+                <a href="Dmitry Vetrov" target="_blank">Dmitry Vetrov</a><sup>1</sup></span>
 
                   </div>
 
@@ -140,10 +140,12 @@
 </section>
 <!-- End paper abstract -->
 
-
-<h2 class="title is-3" id="Overview"> Model Overview </h2>
-        <div class="content has-text-justified">
-          <p>
+<section>
+  <div class="container is-max-desktop content">
+     <div class="column is-full-width">
+       <h2 class="title is-3" id="Overview"> Model Overview </h2>
+         <div class="content has-text-justified">
+           <p>
             In this study, we develop DiMA, a new latent diffusion model that operates on protein language model representations. We demonstrate
 that continuous diffusion on protein embeddings enables effective sequence and structure generation across multiple tasks and encoder architectures. 
 DiMA addresses the limitations of previous continuous diffusion approaches that
@@ -157,7 +159,7 @@ protein design tasks. The framework is designed to be
 encoder-agnostic, allowing it to benefit from advances in
 protein representation learning without requiring architectural
 modifications.
-          </p>
+           </p>
 
 <figure style="margin-top: 1rem; margin-bottom: 1rem;"> 
             <img src="./static/images/DIMA_ICML2025_main_figure-min.png" alt="Model Overview" style="width:120%;">
@@ -172,6 +174,9 @@ generation and conditional generation tasks including motif scaffolding, fold co
 approach enables joint sequence-structure generation while operating entirely in continuous latent space.</strong>
             </figcaption>
           </figure>
+    </div>
+  </div>
+</section>
 
 <!-- Paper poster 
 <section class="hero is-small is-light">
