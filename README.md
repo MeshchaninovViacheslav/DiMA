@@ -11,18 +11,18 @@
   Dmitry Vetrov
   <br>
   <span><sup>*</sup><small><em>core contributor</em></small></span>
-  <br>
+  <br><br>
   <a href="https://openreview.net/pdf?id=xB9eROwBCB" target="_blank">Paper</a> &emsp; <b>&middot;</b> &emsp;
   <a href="https://meshchaninovviacheslav.github.io/DiMA/" target="_blank">Project&nbsp;Page</a>
 </div>
 
-<br><br>
+<br>
 
 <div align="center">
-    <img width="600" alt="main_figure" src="assets/main_figure.png"/>
+    <img src="assets/main_figure.png" width=95% >
 </div>
 
-<br><br>
+<br>
 
 ## Abstract
 
