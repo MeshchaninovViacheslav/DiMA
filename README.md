@@ -19,7 +19,7 @@
 <br>
 
 <div align="center">
-    <img src="assets/main_figure.png" width=95% >
+    <img src="assets/main_figure.jpg" width=95% >
 </div>
 
 <br>
